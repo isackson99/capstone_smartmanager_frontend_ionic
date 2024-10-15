@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Panel Admin</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openMenu()">
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="dashboard">
+    <h2>Bienvenido, Administrador</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card routerLink="/producto">
+            <ion-card-header>
+              <ion-card-title>Gestión de productos</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Búsqueda de productos
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card routerLink="/usuario">
+            <ion-card-header>
+              <ion-card-title>Gestión de usuarios</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Administra los usuarios registrados.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card routerLink="/stock">
+            <ion-card-header>
+              <ion-card-title>Gestión de stock</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Agrega, edita o elimina productos.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card routerLink="/ventas">
+            <ion-card-header>
+              <ion-card-title>Gestión de ventas</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Revisa y gestiona las ventas realizadas.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card routerLink="/dashboard">
+            <ion-card-header>
+              <ion-card-title>Dashboard</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Consulta las estadísticas de ventas y usuarios.
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

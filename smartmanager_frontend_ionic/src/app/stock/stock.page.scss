@@ -1,0 +1,95 @@
+/* Estilo general para el contenido */
+ion-content {
+    background-color: #f7f7f7;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Contenedor principal de la página */
+.stock-container {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Título de la página */
+.stock-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Espaciado para la tabla */
+ion-grid {
+    margin-top: 20px;
+}
+
+/* Estilo para las columnas */
+ion-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Estilo para el input de stock */
+ion-input {
+    max-width: 80px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Botones generales */
+ion-button {
+    --border-radius: 8px;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Botón de agregar producto */
+ion-button[color="medium"] {
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Título de la tabla */
+.stock-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Estilo para las filas de encabezado */
+.header-row {
+    background-color: #4a4a4a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Estilo para las filas de datos */
+.data-row {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+ion-header ion-toolbar ion-title {
+    font-family: 'Quicksand', sans-serif !important; /* Aplica la fuente Quicksand al título */
+    color: #ffffff; /* Cambia el color del texto si es necesario */
+    font-weight: bold; /* Cambia el grosor de la fuente si lo deseas */
+}
+ion-button {
+    border-radius: 30px; /* Bordes más circulares */
+    --background: #565458; /* Color de fondo */
+    --color: #ffffff; /* Color del texto */
+    width: 100%; /* Asegura que el botón ocupe todo el ancho */
+    margin-top: 20px; /* Espacio en la parte superior del botón */
+    font-family: 'Quicksand', sans-serif;
+}

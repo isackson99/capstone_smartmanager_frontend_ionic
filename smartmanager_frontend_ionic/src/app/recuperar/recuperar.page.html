@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperar clave</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="medium">
+  <div class="login-container">
+    <h2>Recuperar contraseña</h2>
+    <ion-icon name="key" size="large" class="icon-large"></ion-icon>
+    <form (ngSubmit)="onSubmit()" #recoverForm="ngForm">
+      <ion-item color="dark">
+        <ion-label position="floating" color="light">
+          <ion-icon slot="start" name="mail"></ion-icon>
+          Correo electrónico
+        </ion-label>
+        <ion-input type="email" name="email" required [(ngModel)]="email" #emailInput="ngModel"></ion-input>
+      </ion-item>
+      <div *ngIf="email && !validateEmail()" class="error-message">
+        El correo debe tener un formato válido.
+      </div>
+      <ion-button expand="block" type="submit" [disabled]="!recoverForm.form.valid">
+        Enviar Instrucciones
+      </ion-button>
+      <ion-item lines="none" class="ion-margin-top centered" color="medium">
+        <ion-label>
+          <a href="/login">Volver a Iniciar Sesión</a>
+        </ion-label>
+      </ion-item>
+    </form>
+  </div>
+</ion-content>
